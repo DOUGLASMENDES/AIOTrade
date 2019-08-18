@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!--
+                Sun Public License Notice
+
+The contents of this file are subject to the Sun Public License
+Version 1.0 (the "License"). You may not use this file except in
+compliance with the License. A copy of the License is available at
+http://www.sun.com/
+
+The Original Code is NetBeans. The Initial Developer of the Original
+Code is Sun Microsystems, Inc. Portions Copyright 1997-2004 Sun
+Microsystems, Inc. All Rights Reserved.
+-->
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.0//EN" "http://www.netbeans.org/dtds/filesystem-1_0.dtd">
+
+<!-- XML Layer for core-ide -->
+
+<filesystem>
+
+    <folder name="Actions">
+        <folder name="System">
+            <file name="org-openide-actions-SaveAsTemplateAction.instance"/>
+        </folder>
+    </folder>
+    
+    <folder name="Services">
+        <folder name="IndentEngine">
+            <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/org/netbeans/core/resources/indentEngines.gif" />
+            <attr name="SystemFileSystem.localizingBundle" stringvalue="org.netbeans.core.Bundle"/>
+            <attr name="helpID" stringvalue="org.netbeans.core.services.IndentEngines"/>
+        </folder>
+    </folder>
+    
+    <folder name="Templates">
+        <folder name="Services">
+            <folder name="IndentEngine">
+                <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/org/netbeans/core/resources/indentEngines.gif" />
+                <attr name="SystemFileSystem.localizingBundle" stringvalue="org.netbeans.core.Bundle"/>
+            </folder>
+        </folder>
+    </folder>
+    
+    <folder name="Menu" >
+        <folder name="Edit" >
+            <file name="Separator3.instance_hidden"  />
+            <file name="org-netbeans-core-actions-JumpNextAction.shadow_hidden" />
+            <file name="org-netbeans-core-actions-JumpPrevAction.shadow_hidden" />
+        </folder>
+        
+        <folder name="GoTo" >
+            <attr name="SeparatorAfterBookmarks.instance/org-netbeans-core-actions-JumpNextAction.shadow" boolvalue="true" />
+            <file name="org-netbeans-core-actions-JumpNextAction.shadow" >
+                <attr name="originalFile" stringvalue="Actions/System/org-netbeans-core-actions-JumpNextAction.instance" />
+            </file>
+            <attr name="org-netbeans-core-actions-JumpNextAction.shadow/org-netbeans-core-actions-JumpPrevAction.shadow" boolvalue="true" />
+            
+            <file name="org-netbeans-core-actions-JumpPrevAction.shadow" >
+                <attr name="originalFile" stringvalue="Actions/System/org-netbeans-core-actions-JumpPrevAction.instance" />
+            </file>
+            <attr name="org-netbeans-core-actions-JumpPrevAction.shadow/SeparatorBeforeSelectIn.instance" boolvalue="true" />
+        </folder>
+    </folder>
+    
+    <folder name="UI">
+        <!-- settings categories UI presentation -->
+        <folder name="Services">
+            <attr name="helpID" stringvalue="org.netbeans.core.ControlPanelNode" />
+            
+            <folder name="IDEConfiguration"> <!-- PENDING rename to somethink like APP Settings or so -->
+                <attr name="SystemFileSystem.localizingBundle" stringvalue="org.netbeans.core.Bundle" />
+
+                <folder name="LookAndFeel"> 
+                    <attr name="SystemFileSystem.localizingBundle" stringvalue="org.netbeans.core.Bundle" />
+                </folder>
+                
+            </folder>        
+            
+            <folder name="Editing">
+                <attr name="SystemFileSystem.localizingBundle" stringvalue="org.netbeans.core.Bundle" />
+                <file name="IndentationEngines.shadow">
+                    <attr name="originalFile" stringvalue="Services/IndentEngine"/>
+                </file>
+            </folder> <!-- EDITING -->
+        
+        </folder>
+        
+        <folder name="Runtime">
+            <attr name="SystemFileSystem.localizingBundle" stringvalue="org.netbeans.core.Bundle" />
+            <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/org/netbeans/core/resources/environment.gif" />
+        </folder> <!-- Runtime -->
+        
+    </folder>
+    
+    <folder name="Toolbars">
+        <!-- remove workspace switcher and status line from toolbars for ide -->
+        <folder name="WorkspaceSwitcher_hidden">
+        </folder>
+        <folder name="StatusLine_hidden">
+        </folder>
+        
+        <!-- specify toolbar config for ide, overrides configuration from core/ui.
+        if you modify this file, please review
+        org/netbeans/core/ui/resources/Standard.xml also, and sync
+        the changes if appropriate -->
+        <file name="Standard.xml" url="Toolbars/Standard.xml">
+            <attr name="SystemFileSystem.localizingBundle" stringvalue="org.netbeans.core.Bundle"/>
+        </file>
+        <attr name="Standard.xml/Developing.xml" boolvalue="true" />
+        <file name="Developing.xml" url="Toolbars/Developing.xml">
+            <attr name="SystemFileSystem.localizingBundle" stringvalue="org.netbeans.core.Bundle"/>
+        </file>
+        <attr name="Developing.xml/Debugging.xml" boolvalue="true" />
+        <file name="Debugging.xml" url="Toolbars/Debugging.xml">
+            <attr name="SystemFileSystem.localizingBundle" stringvalue="org.netbeans.core.Bundle"/>
+        </file>
+ 
+    </folder> <!-- Toolbars -->
+    
+    <folder name="Windows2">
+        <file name="WindowManager.wswmgr" url="WindowManager.wswmgr"/>
+    </folder>
+
+    
+</filesystem>

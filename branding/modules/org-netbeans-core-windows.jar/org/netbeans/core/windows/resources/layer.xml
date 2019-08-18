@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<!--
+This is a `branding' layer. It gets merged with the layer file it's branding.
+In this case, it's just hiding menu items and toolbars we don't want.
+-->
+
+<!--
+The file name in this folder will be appended with the branding name 
+(_aiotrade in this case) when it's be packed.
+such as: 
+    layer.xml will be renamed to layer_aiotrade.xml, 
+    WindowManafer.wswmgr will be renamed to WindowManager_aiotrade.wswmgr
+-->
+
+<filesystem>
+
+    <!-- hide unused toolbars -->
+    <!--folder name="Toolbars">
+        <folder name="File_hidden"/>
+        <folder name="Edit_hidden"/>
+        <folder name="Build_hidden"/>
+        <folder name="Debug_hidden"/>
+        <folder name="Memory_hidden"/>
+    </folder-->
+
+
+    <!--folder name="Menu">
+    <folder name="File">
+    <file name="org-openide-actions-SaveAction.instance_hidden"/>
+    <file name="org-openide-actions-SaveAllAction.instance_hidden"/>
+    <file name="org-netbeans-core-actionsRefreshAllFilesystemsAction.instance_hidden"/>
+    <file name="org-openide-actions-PageSetupAction.instance_hidden"/>
+    <file name="org-openide-actions-PrintAction.instance_hidden"/>
+    </folder>
+    <folder name="Edit_hidden"/>
+    </folder-->
+    
+    <!--folder name="Windows2">
+        <file name="WindowManager.wswmgr" url="WindowManager_aiotrade.wswmgr"/>
+    </folder-->
+
+
+</filesystem>

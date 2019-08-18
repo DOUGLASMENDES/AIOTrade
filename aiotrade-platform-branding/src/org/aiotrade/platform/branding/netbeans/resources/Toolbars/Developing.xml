@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE Configuration PUBLIC "-//NetBeans IDE//DTD toolbar//EN" "http://www.netbeans.org/dtds/toolbar.dtd">
+
+<Configuration>
+    <Row>
+        <Toolbar name="View" />
+        <Toolbar name="Control" />
+        <Toolbar name="Indicator" />
+        <Toolbar name="Draw" />
+        <Toolbar name="Memory" />
+    </Row>
+  
+    <Row>
+        <Toolbar name="File" position="2" />
+        <Toolbar name="Edit" position="2" />
+        <Toolbar name="Build" position="2" />
+        <Toolbar name="Debug" position="2" visible="false" />
+        <Toolbar name="Versioning" position="2" visible="false" />
+    </Row>
+</Configuration>

@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.aiotrade.math
+OpenIDE-Module-Layer: org/aiotrade/math/netbeans/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/aiotrade/math/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

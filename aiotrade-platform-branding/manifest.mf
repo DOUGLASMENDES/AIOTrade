@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.aiotrade.platform.branding
+OpenIDE-Module-Layer: org/aiotrade/platform/branding/netbeans/resources/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/aiotrade/platform/branding/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

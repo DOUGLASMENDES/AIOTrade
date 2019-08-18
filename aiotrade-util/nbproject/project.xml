@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.apisupport.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/nb-module-project/3">
+            <code-name-base>org.aiotrade.util</code-name-base>
+            <suite-component/>
+            <module-dependencies/>
+            <public-packages>
+                <package>org.aiotrade.util</package>
+                <package>org.aiotrade.util.awt</package>
+                <package>org.aiotrade.util.pool</package>
+                <package>org.aiotrade.util.serialization</package>
+                <package>org.aiotrade.util.swing</package>
+                <package>org.aiotrade.util.swing.action</package>
+            </public-packages>
+        </data>
+    </configuration>
+</project>

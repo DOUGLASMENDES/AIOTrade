@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+<!-- for some information on what you could do (e.g. targets to override). -->
+<!-- If you delete this file and reopen the project it will be recreated. -->
+<project name="AIOTrade Platform" basedir=".">
+    <description>Builds the module suite AIOTrade Platform.</description>
+
+    <import file="nbproject/build-impl.xml"/>
+
+    <target name="release-opensource">
+        <tstamp prefix="start"/>
+        <mkdir dir="release-opensource"/>
+        <zip destfile="release-opensource/aiotrade-src-${start.DSTAMP}.zip" compress="true">
+
+            <fileset dir="." includes="nbproject/*.*" 
+            excludes="nbproject/private/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="branding/**/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="build.xml"/>
+            <fileset dir="." includes="LICENSE.txt"/>
+            <fileset dir="." includes="README.txt"/>
+            <fileset dir="." includes="THIRDPARTYLICENSE.txt"/>
+            
+            <fileset dir="." includes="aiotrade-math/nbproject/*.*" 
+            excludes="aiotrade-math/private/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="aiotrade-math/src/**/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="aiotrade-math/test/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="aiotrade-math/*.*"/>
+
+            <fileset dir="." includes="aiotrade-platform-core/nbproject/*.*" 
+            excludes="aiotrade-platform-core/private/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="aiotrade-platform-core/src/**/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="aiotrade-platform-core/test/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="aiotrade-platform-core/*.*"/>
+            
+            <fileset dir="." includes="aiotrade-platform-modules-indicator-basic/nbproject/*.*"
+            excludes="aiotrade-platform-modules-indicator-basic/private/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="aiotrade-platform-modules-indicator-basic/src/**/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="aiotrade-platform-modules-indicator-basic/test/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="aiotrade-platform-modules-indicator-basic/*.*"/>
+
+            <fileset dir="." includes="aiotrade-platform-modules-dataserver-basic/nbproject/*.*"
+            excludes="aiotrade-platform-modules-dataserver-basic/private/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="aiotrade-platform-modules-dataserver-basic/src/**/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="aiotrade-platform-modules-dataserver-basic/test/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="aiotrade-platform-modules-dataserver-basic/*.*"/>
+
+            <fileset dir="." includes="org-hsqldb-hsqldb/nbproject/*.*" 
+            excludes="org-hsqldb-hsqldb/private/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="org-hsqldb-hsqldb/src/**/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="org-hsqldb-hsqldb/release/**/*.*" defaultexcludes="yes"/>
+            <fileset dir="." includes="org-hsqldb-hsqldb/*.*"/>
+        
+        </zip>
+    </target>
+
+</project>

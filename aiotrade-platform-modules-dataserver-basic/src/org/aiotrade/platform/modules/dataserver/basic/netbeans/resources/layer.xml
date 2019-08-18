@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+    <folder name="QuoteServers">
+        <file name="Yahoo.instance">
+            <attr name="instanceClass" stringvalue="org.aiotrade.platform.modules.dataserver.basic.YahooQuoteServer"/>
+        </file>
+        <file name="MetaStockAscii.instance">
+            <attr name="instanceClass" stringvalue="org.aiotrade.platform.modules.dataserver.basic.MetaStockAsciiQuoteServer"/>
+        </file>
+        <file name="CsvAscii.instance">
+            <attr name="instanceClass" stringvalue="org.aiotrade.platform.modules.dataserver.basic.CsvQuoteServer"/>
+        </file>
+        <file name="NetfondsSE.instance">
+            <attr name="instanceClass" stringvalue="org.aiotrade.platform.modules.dataserver.basic.NetfondsSEQuoteServer"/>
+        </file>
+    </folder>
+
+    <folder name="TickerServers">
+        <file name="Yahoo.instance">
+            <attr name="instanceClass" stringvalue="org.aiotrade.platform.modules.dataserver.basic.YahooTickerServer"/>
+        </file>
+    </folder>
+</filesystem>
